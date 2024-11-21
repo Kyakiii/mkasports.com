@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - MKA Sports Apparel</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+                
+            }
+            /*Navigation bar*/
+            .navbar{
+                padding: 20px 5%;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                background-color: black;
+                color: white;
+                width: 100%;
+                position: fixed;
+            }
+            .menu-btn{
+                cursor: pointer;
+                display: none;
+                font-size: 23px;
+                color: white;
+            }
+            .navbar .menu li{
+                list-style: none;
+                display: inline-block;
+            }
+            .navbar .logo{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            .navbar .menu li a{
+                margin-left: 20px;
+                color:white;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+                border-radius: 20px;
+                padding: 15px;
+                transition: all .60s ease;
+                border-radius: 30px;
+            }
+            .navbar .menu li a:hover{
+                background-color: white;
+                color: black;
+            }
+            .content{
+                padding: 0 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                height: 100vh;
+            }
+            .content h1{
+                font-size: 50px;
+            }
+            .content p{
+                margin-top: 20px;
+                font-family: 18px;
+            }
+            .content button{
+                cursor: pointer;
+                margin-top: 40px;
+                border-radius: 30px;
+                color: white;
+                background-color: black;
+                padding: 15px 30px;
+                border: none;           
+                font-size: 18px;     
+                transition: all .50s ease;
+                border-radius: 30px;
+            }
+            .content button:hover{
+                background-color: gray;
+                color: black;
+            }
+            .content p{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">MKA Sports Apparel</div>
+            <ul class="menu">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Log out</a></li>
+            </ul>
+            <div class="menu-btn"></div>
+        </nav>
+        <section class="content">
+            <h1>MKA is your Choice.</h1>
+            <p>Get now and buy the best quality sports wear in Region VIII.</p>
+            <a href="shop.html"><button>Shop now</button></a>
+        </section>
+    </body>
+</html>

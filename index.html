@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MKA Log In</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container h1{
+            color: white;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        body{
+            background: white;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+        .container{
+            width: 600px;
+            max-width: 80%;
+            margin: auto;
+        }
+        .container form{
+            height: 100%;
+            width: 100%;
+            padding: 25px;
+            background: black;
+            border-radius: 10px;
+        }
+        .container form .control{
+            border-radius: 5px;
+            height: 50px;
+            width: 100%;
+            margin: 10px 0 15px 0;
+            padding: 0 15px;
+        }
+        .textboxname label{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container form .button{
+            margin-left: 50px;
+            width: 120px;
+            height: 40px;
+            border: none;
+            background: white;
+            font-size: 15px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            align-items: center;
+            cursor: pointer;
+            transform: translateX(-40%);
+        }
+        .navbar{
+            padding: 20px 5%;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: fixed;
+            height: 90px;
+            font-weight: bold;
+        }
+        .navlogo{
+            height: 90px;
+            width: 100px;
+        }
+        .navbar .menu li{
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar .logo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img src="mka2.png" class="navlogo" width="120px">
+            <div class="logo">MKA Sports Apparel</div>
+        </nav>
+        <div class="container">
+            <form action="home.html">
+                <h1>Log in your Account</h1>
+                <div class="textboxname">
+                    <label for="">EMAIL</label>
+                    <input type="text" class="control" required>
+                </div>
+                <div class="textboxname">
+                    <label for="">PASSWORD</label>
+                    <input type="password" class="control" required>
+                </div>
+                <input type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </body>
+</html>
